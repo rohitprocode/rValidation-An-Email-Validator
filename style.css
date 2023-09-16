@@ -76,15 +76,23 @@
   form {
       font-size: 25px;
   }
-
   #Email{
-    height: 25px;
-    width: fit-content;
-    font-size: 25px;
+    border: none;
   }
   #Email[type='text']{
     font-size: 20px;
+    color: rebeccapurple;
+    border-bottom: 2px solid black;
+    text-align: center;
+    outline-width: 0px;
   }
+  ::placeholder{
+    color: red;
+  }
+  input:hover::placeholder {
+    color: blue;
+  }
+  
   #submit{
     background-color: black;
     color: white;
@@ -96,9 +104,10 @@
   #submit:hover{
     border: 2px solid red;
     color: red;
+    cursor: pointer;
   }
 
-  .container h2{
+  .container2 h2{
     margin: 5vh 42vh 0vh 0vh;
   }
  
