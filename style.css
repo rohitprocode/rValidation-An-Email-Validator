@@ -12,10 +12,6 @@
       font-family: 'Roboto', sans-serif;
   }
 
-  body {
-      background-color: rgb(22, 44, 63);
-  }
-
   header {
       padding: 20px;
       background-color: black;
@@ -60,9 +56,32 @@
   nav ul li a:hover {
       color: rgb(245, 172, 146);
   }
-main{
-    min-height: 90vh;
-}
+
+  main {
+      min-height: 90vh;
+  }
+
+  .container {
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .container h1 {
+      margin: 25px 0;
+  }
+
+  form {
+      font-size: 25px;
+  }
+
+  #username ,#password{
+    height: 25px;
+    width: fit-content;
+    font-size: 25px;
+  }
   footer {
       background-color: black;
       color: white;
