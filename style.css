@@ -77,10 +77,13 @@
       font-size: 25px;
   }
 
-  #username ,#password{
+  #Email{
     height: 25px;
     width: fit-content;
     font-size: 25px;
+  }
+  #Email[type='text']{
+    font-size: 20px;
   }
   #submit{
     background-color: black;
@@ -119,7 +122,7 @@
     .logo{
         margin: 10px auto;
     }
-    #username ,#password{
+    #Email{
        margin: 3px 0 0 0;
       }
   }
