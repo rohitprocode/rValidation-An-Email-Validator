@@ -82,6 +82,23 @@
     width: fit-content;
     font-size: 25px;
   }
+  #submit{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+  }
+
+  #submit:hover{
+    border: 2px solid red;
+    color: red;
+  }
+
+  .container h2{
+    margin: 5vh 42vh 0vh 0vh;
+  }
+ 
   footer {
       background-color: black;
       color: white;
@@ -90,4 +107,18 @@
       justify-content: center;
       padding: 10px;
       letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width:600px) {
+    body{background-color: red;
+    }
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 10px auto;
+    }
   }
