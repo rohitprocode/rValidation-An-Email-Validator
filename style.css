@@ -14,7 +14,7 @@
 
   header {
       padding: 20px;
-      background-color: black;
+      background: linear-gradient(45deg, red, blue);
       color: white;
   }
 
