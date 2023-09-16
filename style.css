@@ -1,5 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: red;
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@400;500&family=PT+Sans+Narrow:wght@700&family=PT+Serif:wght@700&family=REM:wght@500&family=Roboto:wght@500&display=swap');
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Kanit', sans-serif;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'PT Serif', serif;
+      font-family: 'REM', sans-serif;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+      background-color: rgb(22, 44, 63);
+  }
+
+  header {
+      padding: 20px;
+      background-color: black;
+      color: white;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+  }
+
+  .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .logo img {
+      filter: invert(1);
+      width: 35px;
+  }
+
+  .logo span {
+      margin: 0px 10px;
+      font-size: 30px;
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      margin: 0px 5px;
+  }
+
+  nav ul li a:hover {
+      color: rgb(245, 172, 146);
+  }
+main{
+    min-height: 90vh;
 }
+  footer {
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      letter-spacing: 3px;
+  }
