@@ -58,7 +58,7 @@
   }
 
   main {
-      min-height: 90vh;
+      min-height: 77.7vh;
   }
 
   .container {
@@ -78,6 +78,7 @@
   }
   #Email{
     border: none;
+    width: 250px;
   }
   #Email[type='text']{
     font-size: 20px;
@@ -107,10 +108,21 @@
     cursor: pointer;
   }
 
+  .container2{
+    width: 50vh;
+    /* background-color: pink; */
+    margin: auto;
+  }
+
   .container2 h2{
-    margin: 5vh 42vh 0vh 0vh;
+    margin: 5vh 0vh 0vh 0vh;
   }
  
+  #disp{
+    /* background-color: rebeccapurple; */
+    margin: 1vh 12vh 0vh 0vh;
+    text-align: left;
+  }
   footer {
       background-color: black;
       color: white;
