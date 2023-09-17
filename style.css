@@ -137,6 +137,10 @@
   @media only screen and (max-width:600px) {
     header{
         padding: 10px;
+        min-width: 100vw;
+        margin: 0px auto;
+        
+        
     }
     nav{
         flex-direction: column;
@@ -146,5 +150,10 @@
     }
     #Email{
        margin: 3px 0 0 0;
+      }
+      footer{
+        font-size: 15px;
+        width: 100vw;
+        margin: 0px auto;
       }
   }
