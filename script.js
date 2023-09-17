@@ -1,8 +1,5 @@
 // console.log("This is my Script");
 
-// // Input Field Style 
-let inputField = document.getElementById("Email");
-
 let result = {
   "tag": "",
   "free": true,
@@ -21,16 +18,25 @@ let result = {
   "format_valid": true
 }
 
-let str ;
-for(key of Object.keys(result)){
-    str += `<div>${key} : ${result[key]}</div>`; 
-}
-document.getElementById('disp').innerHTML = str; 
-console.log(str)
-
-inputField.addEventListener('input', ()=>{
-    inputField.style.borderBottom = `5px solid ${RandomColor()}`;
+submit.addEventListener('click',async(e)=>{
+  e.preventDefault();
+  disp.innerHTML = '<img style="width: 50px; margin-left: 155px;" src="/Img/Spinner-0.5s-290px.svg" alt="" srcset="">'
+  let Key = "ema_live_M8Z60N2II1P62Tdu89gWwwTkNeufPd3aJn91iPdn";
+  let Email = document.getElementById("Email").value;
+  let url = `https://api.emailvalidation.io/v1/info?apikey=${Key}&email=${Email}`
+  let res = await fetch(url);
+  let result = await res.json();
+  let str = "";
+  for(key of Object.keys(result)){
+    if((result[key] !== "") && (result[key] !== " ")){
+      str += `<div>${key} : ${result[key]}</div>`; 
+    }
+  }
+  disp.innerHTML = str; 
 })
+
+
+
 
 
 
@@ -46,6 +52,8 @@ function RandomColor(){
   return Color.toString();
 }
 
-function setRandomColor() {
-  $("#colorpad").css("background-color", getRandomColor());
-}
+//Function call for random color
+Email.addEventListener('input', ()=>{
+  Email.style.borderBottom = `5px solid ${RandomColor()}`;
+})
+

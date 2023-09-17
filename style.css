@@ -69,16 +69,13 @@
       text-align: center;
   }
 
-  .container h1 {
-      margin: 25px 0;
-  }
-
   form {
       font-size: 25px;
   }
   #Email{
     border: none;
     width: 250px;
+    margin-top: 20px;
   }
   #Email[type='text']{
     font-size: 20px;
@@ -119,10 +116,14 @@
   }
  
   #disp{
-    /* background-color: rebeccapurple; */
     margin: 1vh 12vh 0vh 0vh;
     text-align: left;
   }
+
+  #disp div::first-letter{
+    text-transform: uppercase;
+  }
+
   footer {
       background-color: black;
       color: white;
